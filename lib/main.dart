@@ -1,3 +1,4 @@
+var myOutsideVariable = 'Ram';
 void main(){
  /* print('Hello Poshan!');
   var country = "Nepal";
@@ -11,7 +12,7 @@ void main(){
   bool isTrue = true;
   print(isTrue);
   const pi = 3.14;//you can also use final
-  print(pi);*/
+  print(pi);
   const pi = 3.14;
   print('The value of pi is $pi');
   print('The value of pi is ${pi.toInt()}');
@@ -32,6 +33,29 @@ void main(){
   else{
     print('no matter.');
   }
-
-
+  for(int i=0; i<5;i++)
+  {
+    print('Turn:$i');
+  }*/
+  /*String name = 'Poshan';//contains works
+  if(name.contains('P')){
+    print('Hurray!');
+  }
+  doSomething();
+  print('${function2()}');
+  */
+  var name = sayHello('poshan');
+ print(sayHello('Poshan'));
+ print(name);
+}/*
+doSomething(){
+  print('Function learnt');
 }
+String function2() =>"James bond";//=>means return*/
+sayHello(String name){
+  return "Hello $name";
+}
+//if we are using multiple p;aramaters and  we want some to be optional then we use paramater inside []
+/*if you want to use variable all over you can define variable outside the 
+main function*/
+
