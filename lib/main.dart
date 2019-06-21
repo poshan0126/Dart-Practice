@@ -62,7 +62,7 @@ sayHello(String name){
 main function*/
 
 
- */
+ 
 //Object oriented practice
 class House{
   //Instance variables or member variable
@@ -73,6 +73,7 @@ class House{
   //setter and getter
   String get getName => name;
   set setName(String value)=> name= value;
+  */
   /*
   //constructor
   House(name,color,storey){
@@ -80,7 +81,7 @@ class House{
     this.color= color;
     this.storey= storey;
   }
-  */
+  
 //syntatic sugar constructor
 House(this.name,this.color,this.storey);
 //Named constructor(gives specific value to constructors)
@@ -114,3 +115,66 @@ print(house1.isAvailable());
 secondHouse.displayInfo();
 
 }
+*/
+//Inheritance practice 
+/*
+class Vehicle{
+  String type;
+  int noofWheel;
+  void showSpec(){
+  print('Type : $type Number of Wheel = $noofWheel');
+}
+}
+class Car extends Vehicle{
+  bool goodMilaege;
+  void gm()=>print(goodMilaege);
+}
+void main(){
+  var car1 = new Car();
+  car1.type='good';
+  car1.noofWheel=6;
+  car1.goodMilaege=true;
+  car1.showSpec();
+  car1.gm();
+  }
+  */
+  // Overriding functions in Inheritance
+  /*
+  class Vehicle{
+  String type;
+  int noofWheel;
+  void showSpec(){
+  print('Type : $type Number of Wheel = $noofWheel');
+}
+}
+class Car extends Vehicle{
+  bool goodMilaege;
+  void gm()=>print(goodMilaege);
+  void showSpec(){
+    print('Type: $type');
+  }
+}
+void main(){
+  var car1 = new Car();
+  car1.type='good';
+  car1.noofWheel=6;
+  car1.goodMilaege=true;
+  car1.showSpec();
+  car1.gm();
+  }
+  */
+  //overriding with constructure
+  class Vehicle{
+  String type;
+  int noofWheel;
+   Vehicle(this.type,this.noofWheel);
+}
+class Car extends Vehicle{
+  bool goodMilaege;
+  Car(String type, num noofWheel,this.goodMilaege):super(type,noofWheel);
+}
+void main(){
+  var car2 = new Car('good',4, true);
+  print('Specefication : ${car2.type},${car2.noofWheel},${car2.goodMilaege}');
+}
+ 
