@@ -1,8 +1,9 @@
-/*//Basics of Dart programming
+//Basics of Dart programming
+/*
 
 var myOutsideVariable = 'Ram';
 void main(){
- /* print('Hello Poshan!');
+  print('Hello Poshan!');
   var country = "Nepal";
   print('My country name is '+ country);//single quote is also used mostly
   String name;
@@ -38,32 +39,34 @@ void main(){
   for(int i=0; i<5;i++)
   {
     print('Turn:$i');
-  }*/
-  /*String name = 'Poshan';//contains works
+  }
+  String name = 'Poshan';//contains works
   if(name.contains('P')){
     print('Hurray!');
   }
   doSomething();
   print('${function2()}');
-  */
+  
   var name = sayHello('poshan');
  print(sayHello('Poshan'));
  print(name);
-}/*
+}
 doSomething(){
   print('Function learnt');
 }
-String function2() =>"James bond";//=>means return*/
+String function2() =>"James bond";//=>means return
 sayHello(String name){
   return "Hello $name";
 }
 //if we are using multiple p;aramaters and  we want some to be optional then we use paramater inside []
 /*if you want to use variable all over you can define variable outside the 
 main function*/
+*/
 
 
  
 //Object oriented practice
+/*
 class House{
   //Instance variables or member variable
   String name; //= 'Pandey Niwash';
@@ -73,8 +76,6 @@ class House{
   //setter and getter
   String get getName => name;
   set setName(String value)=> name= value;
-  */
-  /*
   //constructor
   House(name,color,storey){
     this.name=name;
@@ -137,9 +138,7 @@ void main(){
   car1.showSpec();
   car1.gm();
   }
-  */
   // Overriding functions in Inheritance
-  /*
   class Vehicle{
   String type;
   int noofWheel;
@@ -162,8 +161,8 @@ void main(){
   car1.showSpec();
   car1.gm();
   }
-  */
   //overriding with constructure
+  
   class Vehicle{
   String type;
   int noofWheel;
@@ -177,4 +176,5 @@ void main(){
   var car2 = new Car('good',4, true);
   print('Specefication : ${car2.type},${car2.noofWheel},${car2.goodMilaege}');
 }
+*/
  
